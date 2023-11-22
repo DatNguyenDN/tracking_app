@@ -1,8 +1,19 @@
 body{   
     max-height: 650px;
     background-color: rgba(211, 211, 211, 0.696);
+    font-family: 'Poppins'
     /* background-image: linear-gradient(to right, #ff9966, #ff5e62); */
 }
+*{
+  margin: 0;
+  padding: 0;
 
+}
+
+.visible.transition {
+  display: block !important;
+  visibility: visible !important;
+}
+@import "semantic-ui-css/components/dropdown.min.css";
 
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gabarito&family=Montserrat:ital,wght@1,400;1,700&family=Nunito&family=Pixelify+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@1,600&family=Tilt+Neon&display=swap');
