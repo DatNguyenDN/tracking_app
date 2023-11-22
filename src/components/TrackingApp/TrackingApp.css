@@ -1,12 +1,11 @@
 
-
 .tracking-app{
     margin: auto;
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 480px;
     width: 400px;
     border: 1px solid black;
     border:none;   
@@ -16,34 +15,18 @@
 }
 
 
-/* h1 {
-    background-color: linear-gradient(to right ,#553c9a, #ee4b2b, #00c2cb, #ff7f50, #553c9a);
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-	color: #444;
-	margin: 0;
-	padding: 0px 0px 6px 0px;
-	font-size: 51px;
-	line-height: 44px;
-	letter-spacing: -2px;
-	font-weight: bold;
-} */
+
 
 h1{
-    font-family: 'Poppins', italic;
+  font-family: 'Poppins', italic;
   font-size: 40px;
   font-weight: 600;
   color: transparent;
   background-image: linear-gradient(to right,  #ee4b2b,#7453ce );
   -webkit-background-clip: text;
-  /* background-clip: text;    
-  background-size: 200%;
-  background-position: -200%;
-  animation: animated-gradient 5s infinite alternate-reverse;      
-}
-@keyframes animated-gradient{
-  to{
-    background-position: 200%;
-  } */
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 
@@ -51,20 +34,51 @@ h1{
     margin-bottom: 30px;
 }
 
-.submit-btn{
-    margin-top: 60px;
-
-}
 
 .submit-btn button{
+    margin-top: 30px;
     background-color: rgb(19, 137, 216);
     color: white;
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: 20px;
-    height: 37.81px;
+    height: 50px;
     width: 100%;
     font-size: 18px;
 }
+/* borderRadius': '30px','margin':'20px 0','justifyContent':'center' */
 
+.form input {
+  height: 30px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 50px;
+}
+
+.form-input {
+  width: 250px !important;
+  border-radius: 30px !important;
+  margin-bottom: 40px !important;
+  
+}
+
+.errors-mess{
+  padding: 0 !important;
+  margin: 0 !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .tracking-app{
+    justify-content: center;
+    margin: 30px auto;
+   width: 300px;
+   height: 400px;
+  }
+}

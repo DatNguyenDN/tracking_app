@@ -21,27 +21,30 @@ const TrackingApp = () => {
                   <Form.Field className='form' >
                       <label></label>
                       <input
-                          style={{'borderRadius': '30px','margin':'20px 0'}}                        
+                          className='form-input'
+                          // style={{'border-radius': '50px'}}
+                                                
                           placeholder='Email' 
-                          type="email" 
+                          type="text" 
                           {...register('email', {required: true,
                             pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/})}
                       />
                       {errors.email && 
-                          <p className="ui negative mini message">Enter a valid email address</p>
+                          <div className="errors-mess" style={{'color':'red'}}>Enter a valid email address</div>
                       }
                   </Form.Field>
                   <Form.Field >
                       <label htmlFor="websiteUrl" ></label>
-                      <input    style={{'borderRadius': '30px'}}   
+                      <input    
                                 type="text"
+                                className='form-input'
                                 placeholder='Website Url'                                                               
                                  {...register("url", {required:true,
                                   pattern:/^(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?\/[a-zA-Z0-9]{2,}|((https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z]{2,}(\.[a-zA-Z]{2,})(\.[a-zA-Z]{2,})?)|(https:\/\/www\.|http:\/\/www\.|https:\/\/|http:\/\/)?[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}(\.[a-zA-Z0-9]{2,})?/g
                                 })}
                                  
                       />
-                       {errors.url && <p className="ui negative mini message">Enter a valid url address</p>}
+                       {errors.url && <div className="errors-mess" style={{'color':'red'}} >Enter a valid url address</div>}
                   </Form.Field>
                   <div className='submit-btn'>
                     <button>Submit</button>
