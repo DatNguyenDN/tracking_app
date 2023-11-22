@@ -1,35 +1,8 @@
-.app{
-    margin: auto;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    width: 400px;
-    border: 1px solid black;   
-    border-radius: 20px;
-    
-}
-
 body{   
     max-height: 650px;
-    background-image: linear-gradient(to right, #ff9966, #ff5e62);
+    background-color: rgba(211, 211, 211, 0.696);
+    /* background-image: linear-gradient(to right, #ff9966, #ff5e62); */
 }
 
 
-
-h1 {
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-	color: #444;
-	margin: 0;
-	padding: 0px 0px 6px 0px;
-	font-size: 51px;
-	line-height: 44px;
-	letter-spacing: -2px;
-	font-weight: bold;
-}
-
-.heading{
-    margin-bottom: 30px;
-}
-
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gabarito&family=Montserrat:ital,wght@1,400;1,700&family=Nunito&family=Pixelify+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@1,600&family=Tilt+Neon&display=swap');
